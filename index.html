@@ -1,178 +1,522 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Roger Infa Sánchez - Desarrollador de Software</title>
+    <title>Roger Infa Sánchez | Ingeniero de Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        dark: '#1a1a1a',
+                        darker: '#121212',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Roger Infa Sánchez</h1>
-        <h2>Ingeniero de Software</h2>
-        <p>contactorogeris@gmail.com | +51 977 312 592 | Arequipa, Perú</p>
-        <p>linkedin.com/in/roger-infa-sanchez | github.com/rogerinfas</p>
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil Profesional</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#certificaciones">Certificaciones</a></li>
-            </ul>
-        </nav>
+<body class="bg-darker text-gray-300 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-dark fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-primary font-bold text-xl">RogerIS</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#perfil" class="hover:text-primary transition">Perfil</a>
+                    <a href="#experiencia" class="hover:text-primary transition">Experiencia</a>
+                    <a href="#habilidades" class="hover:text-primary transition">Habilidades</a>
+                    <a href="#proyectos" class="hover:text-primary transition">Proyectos</a>
+                    <a href="#contacto" class="hover:text-primary transition">Contacto</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-darker w-full px-6 py-4" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#perfil" class="hover:text-primary transition">Perfil</a>
+                <a href="#experiencia" class="hover:text-primary transition">Experiencia</a>
+                <a href="#habilidades" class="hover:text-primary transition">Habilidades</a>
+                <a href="#proyectos" class="hover:text-primary transition">Proyectos</a>
+                <a href="#contacto" class="hover:text-primary transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Roger Infa Sánchez</h1>
+                <h2 class="text-2xl md:text-3xl text-primary mb-6">Ingeniero de Software</h2>
+                <p class="text-lg mb-8">Desarrollador Full Stack especializado en arquitecturas escalables y soluciones tecnológicas innovadoras.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contacto" class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">Contactar</a>
+                    <a href="#proyectos" class="border border-primary text-primary hover:bg-blue-900 hover:bg-opacity-20 px-6 py-3 rounded-lg transition">Proyectos</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="perfil">
-            <h2>Perfil Profesional</h2>
-            <p>Desarrollador de software con más de 3 años de experiencia en soluciones web, automatización de procesos y sistemas backend eficientes. Me especializo en la integración de APIs, arquitecturas desacopladas y tecnologías modernas. Trabajo bien en equipo, comunico con claridad y tengo enfoque en la entrega de valor real. Busco aportar en proyectos con impacto, combinando habilidades técnicas y compromiso profesional.</p>
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pb-20">
+        <!-- Perfil -->
+        <section id="perfil" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Perfil Profesional</h2>
+            </div>
+            <div class="bg-dark p-8 rounded-lg shadow-lg">
+                <p class="text-lg leading-relaxed">Desarrollador de software con más de 3 años de experiencia en soluciones web, automatización de procesos y sistemas backend eficientes. Me especializo en la integración de APIs, arquitecturas desacopladas y tecnologías modernas. Trabajo bien en equipo, comunico con claridad y tengo enfoque en la entrega de valor real. Busco aportar en proyectos con impacto, combinando habilidades técnicas y compromiso profesional.</p>
+            </div>
         </section>
 
-        <section id="experiencia">
-            <h2>Experiencia Profesional</h2>
+        <!-- Experiencia -->
+        <section id="experiencia" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Experiencia Profesional</h2>
+            </div>
             
-            <article>
-                <h3>MF Gastronomía y Calidad S.A.C</h3>
-                <p><em>Pizzero y Asistente de TI</em></p>
-                <ul>
-                    <li>Mantenimiento web y soporte interno</li>
-                    <li>Propuse soluciones digitales para atención al cliente y gestión de pedidos</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Universidad La Salle – Proyecto Curiosamente</h3>
-                <p><em>Desarrollador Full Stack</em></p>
-                <ul>
-                    <li>App educativa inclusiva con React Native y Firebase</li>
-                    <li>Implementada en CEBE Polivalente</li>
-                    <li>Repositorio: github.com/rogerinfas/ProyectoCuriosamente</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Universidad La Salle – Proyecto CodeGuard</h3>
-                <p><em>Desarrollador Backend y Analista Funcional</em></p>
-                <ul>
-                    <li>Sistema de detección de plagio en SQL con TF-IDF, similitud coseno y Gemini AI</li>
-                    <li>Integración con SMTP y login por DNI</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>TECSUP</h3>
-                <p><em>Desarrollador Full Stack</em></p>
-                <ul>
-                    <li>Plataforma para cálculo de vida útil de maquinaria pesada</li>
-                    <li>Mejorando la precisión en reportes estudiantiles</li>
-                    <li>Repositorio: github.com/rogerinfas/App-Tecsup</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>Laborarpe</h3>
-                <p><em>Desarrollador Full Stack</em></p>
-                <ul>
-                    <li>Sistema completo de gestión de personal: asistencia, reportes y dashboards para RRHH</li>
-                </ul>
-            </article>
+            <div class="space-y-8">
+                <!-- Experiencia 1 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">MF Gastronomía y Calidad S.A.C</h3>
+                            <p class="text-primary mb-2">Pizzero y Asistente de TI</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Mantenimiento web y soporte interno</li>
+                                <li>Propuse soluciones digitales para atención al cliente y gestión de pedidos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 2 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-university text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Universidad La Salle – Proyecto Curiosamente</h3>
+                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>App educativa inclusiva con React Native y Firebase</li>
+                                <li>Implementada en CEBE Polivalente</li>
+                                <li class="flex items-center">
+                                    <i class="fab fa-github mr-2"></i>
+                                    <a href="https://github.com/rogerinfas/ProyectoCuriosamente" class="text-primary hover:underline">github.com/rogerinfas/ProyectoCuriosamente</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 3 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Universidad La Salle – Proyecto CodeGuard</h3>
+                            <p class="text-primary mb-2">Desarrollador Backend y Analista Funcional</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Sistema de detección de plagio en SQL con TF-IDF, similitud coseno y Gemini AI</li>
+                                <li>Integración con SMTP y login por DNI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 4 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-cogs text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">TECSUP</h3>
+                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Plataforma para cálculo de vida útil de maquinaria pesada</li>
+                                <li>Mejorando la precisión en reportes estudiantiles</li>
+                                <li class="flex items-center">
+                                    <i class="fab fa-github mr-2"></i>
+                                    <a href="https://github.com/rogerinfas/App-Tecsup" class="text-primary hover:underline">github.com/rogerinfas/App-Tecsup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experiencia 5 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Laborarpe</h3>
+                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Sistema completo de gestión de personal: asistencia, reportes y dashboards para RRHH</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="educacion">
-            <h2>Educación</h2>
-            <article>
-                <h3>Universidad La Salle, Arequipa</h3>
-                <p><em>Ingeniería de Software</em> (2020 - Presente)</p>
-                <ul>
-                    <li>Tesis en desarrollo sobre apps móviles y geolocalización aplicada al transporte urbano</li>
-                </ul>
-            </article>
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Habilidades Técnicas</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Frontend -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
+                            <i class="fas fa-paint-brush text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Frontend</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            HTML, CSS, JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            React.js, Next.js, Angular, Vue.js
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Bootstrap, Material UI, TailwindCSS
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Backend -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
+                            <i class="fas fa-server text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Backend</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Python, JavaScript, TypeScript, Go, C#, Java
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Flask, FastAPI, Django, Express.js, NestJS
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            JWT, OAuth2, Google Auth, autenticación por DNI
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            WebSockets, APIs REST y GraphQL
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Docker, servicios desacoplados
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Bases de Datos -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
+                            <i class="fas fa-database text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Bases de Datos</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            MySQL, PostgreSQL, SQLite, Oracle
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            MongoDB
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            SQLAlchemy, TypeORM, Sequelize
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Otros -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
+                            <i class="fas fa-tools text-primary"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Otros</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Despliegue: VPS, Google Cloud
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Testing: PyTest, Jest, Selenium
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            GitHub, GitLab, Git Flow
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            Scrum, Kanban, Trello
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-primary mr-2 text-sm"></i>
+                            IA: TensorFlow, PyTorch, OpenCV
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Idiomas -->
+            <div class="mt-8 bg-dark p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
+                        <i class="fas fa-language text-primary"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Idiomas</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="flex items-center">
+                        <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                        <span>Español: Nativo</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                        <span>Inglés: Intermedio-Avanzado</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                        <span>Portugués: Básico</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
+        <!-- Proyectos -->
+        <section id="proyectos" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Proyectos Destacados</h2>
+            </div>
             
-            <h3>Frontend</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>React.js, Next.js, Angular, Vue.js</li>
-                <li>Bootstrap, Material UI, TailwindCSS</li>
-            </ul>
-            
-            <h3>Backend</h3>
-            <ul>
-                <li>Python, JavaScript, TypeScript, Go, C#, Java, PHP, Ruby</li>
-                <li>Flask, FastAPI, Django, Express.js, NestJS, .NET, Spring Boot</li>
-                <li>JWT, OAuth2, Google Auth, autenticación por DNI</li>
-                <li>WebSockets, Socket.io, APIs REST y GraphQL</li>
-                <li>Docker, servicios desacoplados, multihilos</li>
-            </ul>
-            
-            <h3>Bases de Datos</h3>
-            <ul>
-                <li>Relacionales: MySQL, PostgreSQL, SQLite, Oracle, SQL Server</li>
-                <li>NoSQL: MongoDB</li>
-                <li>ORMs: SQLAlchemy, TypeORM, Sequelize, Entity Framework</li>
-            </ul>
-            
-            <h3>Otros</h3>
-            <ul>
-                <li>Despliegue: VPS, Google Cloud</li>
-                <li>Testing: PyTest, Jest, Mocha, Selenium</li>
-                <li>GitHub, GitLab, Git Flow</li>
-                <li>Scrum, Kanban, Trello</li>
-                <li>IA y Visión: TensorFlow, Scikit-learn, PyTorch, OpenCV, OpenFace</li>
-            </ul>
-            
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Español: Nativo</li>
-                <li>Inglés: Intermedio-Avanzado</li>
-                <li>Portugués: Básico</li>
-            </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Proyecto 1 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fab fa-telegram text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">AutoMsgTG</h3>
+                    </div>
+                    <p class="text-gray-400 mb-3">Bot de Automatización para Telegram (2024)</p>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-400">
+                        <li>Sistema en Flask + Telethon para envío masivo de mensajes a bots</li>
+                        <li>Control con 'threading.Event', carga de 'txt' y múltiples sesiones</li>
+                    </ul>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-tooth text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">OdontoWeb</h3>
+                    </div>
+                    <p class="text-gray-400 mb-3">Gestión de Citas Dentales (2025)</p>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-400">
+                        <li>Backend en NestJS y base de datos en MySQL</li>
+                        <li>Autenticación con Google, notificaciones por WhatsApp</li>
+                        <li class="flex items-center">
+                            <i class="fab fa-github mr-2"></i>
+                            <a href="https://github.com/rogerinfas/ConsultorioDentalWeb" class="text-primary hover:underline">github.com/rogerinfas/ConsultorioDentalWeb</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section id="proyectos">
-            <h2>Proyectos Destacados</h2>
+        <!-- Certificaciones -->
+        <section id="certificaciones" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Certificaciones</h2>
+            </div>
             
-            <article>
-                <h3>AutoMsgTG – Bot de Automatización para Telegram (2024)</h3>
-                <ul>
-                    <li>Sistema en Flask + Telethon para envío masivo de mensajes a bots</li>
-                    <li>Control con 'threading.Event', carga de 'txt' y múltiples sesiones</li>
-                </ul>
-            </article>
-            
-            <article>
-                <h3>OdontoWeb – Gestión de Citas Dentales (2025)</h3>
-                <ul>
-                    <li>Backend en NestJS y base de datos en MySQL</li>
-                    <li>Autenticación con Google, notificaciones por WhatsApp y envío de correos</li>
-                    <li>Repositorio: github.com/rogerinfas/ConsultorioDentalWeb</li>
-                </ul>
-            </article>
+            <div class="bg-dark p-6 rounded-lg shadow-lg">
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-certificate text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Udemy 2025</h3>
+                            <p class="text-gray-400">Flask y MySQL – Proyecto Web Completo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-certificate text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Udemy 2025</h3>
+                            <p class="text-gray-400">APIs RESTful con Python, FastAPI y JWT</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-4 mt-1">
+                            <i class="fas fa-certificate text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Cisco Networking Academy 2022</h3>
+                            <p class="text-gray-400">Cisco Packet Tracer Network Simulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="certificaciones">
-            <h2>Certificaciones</h2>
-            <ul>
-                <li>Udemy 2025 - Flask y MySQL – Proyecto Web Completo</li>
-                <li>Udemy 2025 - APIs RESTful con Python, FastAPI y JWT</li>
-                <li>Cisco Networking Academy 2022 - Cisco Packet Tracer Network Simulation</li>
-            </ul>
+        <!-- Educación -->
+        <section id="educacion" class="py-16">
+            <div class="flex items-center mb-8">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white">Educación</h2>
+            </div>
+            
+            <div class="bg-dark p-6 rounded-lg shadow-lg">
+                <div class="flex items-start">
+                    <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                        <i class="fas fa-graduation-cap text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Universidad La Salle, Arequipa</h3>
+                        <p class="text-primary mb-2">Ingeniería de Software (2020 - Presente)</p>
+                        <p class="text-gray-400">Tesis en desarrollo sobre apps móviles y geolocalización aplicada al transporte urbano.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <h2>Contacto</h2>
-        <address>
-            <p>Email: contactorogeris@gmail.com</p>
-            <p>Teléfono: +51 977 312 592</p>
-            <p>Ubicación: Arequipa, Perú</p>
-            <p>LinkedIn: linkedin.com/in/roger-infa-sanchez</p>
-            <p>GitHub: github.com/rogerinfas</p>
-        </address>
+    <!-- Contacto -->
+    <footer id="contacto" class="bg-dark py-16 px-6">
+        <div class="container mx-auto">
+            <div class="flex items-center mb-8 justify-center">
+                <div class="h-1 bg-primary w-12"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white text-center">Contacto</h2>
+            </div>
+            
+            <div class="max-w-2xl mx-auto bg-darker p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-center">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold">Email</h3>
+                            <a href="mailto:contactorogeris@gmail.com" class="text-primary hover:underline">contactorogeris@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold">Teléfono</h3>
+                            <a href="tel:+51977312592" class="text-primary hover:underline">+51 977 312 592</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fab fa-linkedin-in text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold">LinkedIn</h3>
+                            <a href="https://linkedin.com/in/roger-infa-sanchez" class="text-primary hover:underline">linkedin.com/in/roger-infa-sanchez</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fab fa-github text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold">GitHub</h3>
+                            <a href="https://github.com/rogerinfas" class="text-primary hover:underline">github.com/rogerinfas</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-gray-400">© 2024 Roger Infa Sánchez. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
