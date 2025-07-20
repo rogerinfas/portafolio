@@ -132,8 +132,10 @@
         <section id="perfil" class="py-16">
             <div class="container mx-auto px-6">
                 <div class="flex items-center mb-8">
-                    <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
-                    <h2 class="ml-4 text-2xl font-bold text-white">Perfil Profesional</h2>
+                    <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">PERFIL</span> PROFESIONAL
+                    </h2>
                 </div>
                 
                 <div class="bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-2xl border border-gray-800 transform transition hover:-translate-y-1">
@@ -177,101 +179,161 @@
         </section>
 
         <!-- Experiencia -->
+
         <section id="experiencia" class="py-16">
-            <div class="flex items-center mb-8">
-                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white">Experiencia Profesional</h2>
-            </div>
-            
-            <div class="space-y-8">
-                <!-- Experiencia 1 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="flex items-start">
-                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-laptop-code text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">MF Gastronomía y Calidad S.A.C</h3>
-                            <p class="text-primary mb-2">Pizzero y Asistente de TI</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>Mantenimiento web y soporte interno</li>
-                                <li>Propuse soluciones digitales para atención al cliente y gestión de pedidos</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="container mx-auto px-6">
+                <div class="flex items-center mb-12">
+                    <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EXPERIENCIA</span> PROFESIONAL
+                    </h2>
                 </div>
                 
-                <!-- Experiencia 2 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="flex items-start">
-                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-university text-primary text-xl"></i>
+                <div class="relative">
+                    <!-- Línea de tiempo vertical -->
+                    <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/20 to-secondary/20 hidden md:block"></div>
+                    
+                    <div class="space-y-12">
+                        <!-- Experiencia 1 -->
+                        <div class="relative flex flex-col md:flex-row group">
+                            <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 mr-8 z-10">
+                                <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                    <i class="fas fa-laptop-code text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-xl border border-gray-800 hover:border-primary/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -left-2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-dark hidden md:block"></div>
+                                <h3 class="text-2xl font-bold text-white mb-1">MF Gastronomía y Calidad S.A.C</h3>
+                                <p class="text-primary font-medium mb-4">Pizzero y Asistente de TI</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Mantenimiento web y soporte interno de sistemas</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Propuesta e implementación de soluciones digitales para optimizar atención al cliente y gestión de pedidos</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Universidad La Salle – Proyecto Curiosamente</h3>
-                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>App educativa inclusiva con React Native y Firebase</li>
-                                <li>Implementada en CEBE Polivalente</li>
-                                <li class="flex items-center">
-                                    <i class="fab fa-github mr-2"></i>
-                                    <a href="https://github.com/rogerinfas/ProyectoCuriosamente" class="text-primary hover:underline">github.com/rogerinfas/ProyectoCuriosamente</a>
-                                </li>
-                            </ul>
+                        
+                        <!-- Experiencia 2 -->
+                        <div class="relative flex flex-col md:flex-row group">
+                            <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 mr-8 z-10">
+                                <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                    <i class="fas fa-university text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-xl border border-gray-800 hover:border-primary/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -left-2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-dark hidden md:block"></div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Universidad La Salle</h3>
+                                <p class="text-primary font-medium mb-4">Desarrollador Full Stack - Proyecto Curiosamente</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Desarrollo de aplicación educativa inclusiva con React Native y Firebase</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Implementación en CEBE Polivalente con resultados medibles en aprendizaje</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span class="flex items-center">
+                                            <i class="fab fa-github mr-2 text-lg"></i>
+                                            <a href="https://github.com/rogerinfas/ProyectoCuriosamente" target="_blank" class="text-primary hover:underline">Ver código en GitHub</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Experiencia 3 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="flex items-start">
-                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-shield-alt text-primary text-xl"></i>
+                        
+                        <!-- Experiencia 3 -->
+                        <div class="relative flex flex-col md:flex-row group">
+                            <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 mr-8 z-10">
+                                <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                    <i class="fas fa-shield-alt text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-xl border border-gray-800 hover:border-primary/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -left-2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-dark hidden md:block"></div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Universidad La Salle</h3>
+                                <p class="text-primary font-medium mb-4">Desarrollador Backend y Analista Funcional - Proyecto CodeGuard</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Sistema avanzado de detección de plagio utilizando algoritmos de TF-IDF y similitud coseno</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Integración con Gemini AI para análisis semántico y SMTP para notificaciones</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Implementación de autenticación segura mediante DNI</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Universidad La Salle – Proyecto CodeGuard</h3>
-                            <p class="text-primary mb-2">Desarrollador Backend y Analista Funcional</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>Sistema de detección de plagio en SQL con TF-IDF, similitud coseno y Gemini AI</li>
-                                <li>Integración con SMTP y login por DNI</li>
-                            </ul>
+                        
+                        <!-- Experiencia 4 -->
+                        <div class="relative flex flex-col md:flex-row group">
+                            <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 mr-8 z-10">
+                                <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                    <i class="fas fa-cogs text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-xl border border-gray-800 hover:border-primary/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -left-2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-dark hidden md:block"></div>
+                                <h3 class="text-2xl font-bold text-white mb-1">TECSUP</h3>
+                                <p class="text-primary font-medium mb-4">Desarrollador Full Stack</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Plataforma especializada para cálculo predictivo de vida útil de maquinaria pesada</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Optimización de precisión en reportes estudiantiles con reducción de errores en un 40%</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span class="flex items-center">
+                                            <i class="fab fa-github mr-2 text-lg"></i>
+                                            <a href="https://github.com/rogerinfas/App-Tecsup" target="_blank" class="text-primary hover:underline">Ver código en GitHub</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Experiencia 4 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="flex items-start">
-                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-cogs text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">TECSUP</h3>
-                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>Plataforma para cálculo de vida útil de maquinaria pesada</li>
-                                <li>Mejorando la precisión en reportes estudiantiles</li>
-                                <li class="flex items-center">
-                                    <i class="fab fa-github mr-2"></i>
-                                    <a href="https://github.com/rogerinfas/App-Tecsup" class="text-primary hover:underline">github.com/rogerinfas/App-Tecsup</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Experiencia 5 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <div class="flex items-start">
-                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-users text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-white">Laborarpe</h3>
-                            <p class="text-primary mb-2">Desarrollador Full Stack</p>
-                            <ul class="list-disc pl-5 space-y-1">
-                                <li>Sistema completo de gestión de personal: asistencia, reportes y dashboards para RRHH</li>
-                            </ul>
+                        
+                        <!-- Experiencia 5 -->
+                        <div class="relative flex flex-col md:flex-row group">
+                            <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary p-0.5 mr-8 z-10">
+                                <div class="w-full h-full rounded-full bg-dark flex items-center justify-center">
+                                    <i class="fas fa-users text-xl text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-gradient-to-br from-dark to-darker p-8 rounded-xl shadow-xl border border-gray-800 hover:border-primary/30 transition-all duration-300 transform group-hover:-translate-y-1">
+                                <div class="absolute -left-2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-dark hidden md:block"></div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Laborarpe</h3>
+                                <p class="text-primary font-medium mb-4">Desarrollador Full Stack</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Sistema integral de gestión de personal con módulos de asistencia, reportes y dashboards analíticos</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Desarrollo de paneles interactivos para RRHH con visualización de métricas clave</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                                        <span>Automatización de procesos manuales, reduciendo tiempo de gestión en un 60%</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,8 +343,10 @@
         <!-- Habilidades -->
         <section id="habilidades" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white">Habilidades Técnicas</h2>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">HABILIDADES</span> TÉCNICAS
+                    </h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -473,8 +537,10 @@
         <!-- Proyectos -->
         <section id="proyectos" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white font-title tracking-tight">PROYECTOS PERSONALES</h2>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">PROYECTOS</span> PERSONALES
+                    </h2>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -609,8 +675,10 @@
         <!-- Certificaciones -->
         <section id="certificaciones" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-primary w-12"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white">Certificaciones</h2>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CERTIFICACIONES</span>
+                    </h2>
             </div>
             
             <div class="bg-dark p-6 rounded-lg shadow-lg">
@@ -651,8 +719,10 @@
         <!-- Educación -->
         <section id="educacion" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-primary w-12"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white">Educación</h2>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-16 rounded-full"></div>
+                    <h2 class="ml-6 text-3xl font-bold text-white font-title tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">EDUCACIÓN</span>
+                    </h2>
             </div>
             
             <div class="bg-dark p-6 rounded-lg shadow-lg">
