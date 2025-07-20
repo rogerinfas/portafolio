@@ -179,7 +179,7 @@
         <!-- Experiencia -->
         <section id="experiencia" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-primary w-12"></div>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
                 <h2 class="ml-4 text-2xl font-bold text-white">Experiencia Profesional</h2>
             </div>
             
@@ -281,7 +281,7 @@
         <!-- Habilidades -->
         <section id="habilidades" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-primary w-12"></div>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
                 <h2 class="ml-4 text-2xl font-bold text-white">Habilidades Técnicas</h2>
             </div>
             
@@ -400,26 +400,72 @@
             </div>
             
             <!-- Idiomas -->
-            <div class="mt-8 bg-dark p-6 rounded-lg shadow-lg">
-                <div class="flex items-center mb-4">
-                    <div class="bg-primary bg-opacity-20 p-2 rounded-full mr-3">
-                        <i class="fas fa-language text-primary"></i>
+            <div class="mt-8 bg-gradient-to-br from-dark to-darker p-6 rounded-xl shadow-lg border border-gray-800 hover:border-primary/30 transition">
+                <div class="flex items-center mb-6">
+                    <div class="bg-gradient-to-r from-primary to-secondary p-2 rounded-full mr-3">
+                        <i class="fas fa-language text-white"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-white">Idiomas</h3>
+                    <h3 class="text-xl font-bold text-white font-title tracking-tight">IDIOMAS</h3>
                 </div>
+                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div class="flex items-center">
-                        <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
-                        <span>Español: Nativo</span>
+                    <!-- Español -->
+                    <div class="bg-dark p-4 rounded-lg border-l-4 border-green-500 hover:bg-gray-900/50 transition">
+                        <div class="flex items-center mb-2">
+                            <span class="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                            <h4 class="font-semibold text-white">Español</h4>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-300">Nativo</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center">
-                        <span class="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
-                        <span>Inglés: Intermedio-Avanzado</span>
+                    
+                    <!-- Inglés -->
+                    <div class="bg-dark p-4 rounded-lg border-l-4 border-yellow-500 hover:bg-gray-900/50 transition">
+                        <div class="flex items-center mb-2">
+                            <span class="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                            <h4 class="font-semibold text-white">Inglés</h4>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-300">Intermedio-Avanzado</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex items-center">
-                        <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
-                        <span>Portugués: Básico</span>
+                    
+                    <!-- Portugués -->
+                    <div class="bg-dark p-4 rounded-lg border-l-4 border-blue-500 hover:bg-gray-900/50 transition">
+                        <div class="flex items-center mb-2">
+                            <span class="inline-block w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                            <h4 class="font-semibold text-white">Portugués</h4>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-300">Básico</span>
+                            <div class="flex space-x-1">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                                <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                                <span class="w-2 h-2 bg-gray-700 rounded-full"></span>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                
+                <div class="mt-4 text-right">
+                    <span class="text-xs text-gray-500">* Según estándar MCER</span>
                 </div>
             </div>
         </section>
@@ -427,43 +473,135 @@
         <!-- Proyectos -->
         <section id="proyectos" class="py-16">
             <div class="flex items-center mb-8">
-                <div class="h-1 bg-primary w-12"></div>
-                <h2 class="ml-4 text-2xl font-bold text-white">Proyectos Destacados</h2>
+                <div class="h-1 bg-gradient-to-r from-primary to-secondary w-12 rounded-full"></div>
+                <h2 class="ml-4 text-2xl font-bold text-white font-title tracking-tight">PROYECTOS PERSONALES</h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Proyecto 1 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
                     <div class="flex items-center mb-4">
                         <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fab fa-telegram text-primary text-xl"></i>
+                            <i class="fas fa-futbol text-primary"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white">AutoMsgTG</h3>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Football Hours SaaS</h3>
+                            <p class="text-sm text-gray-400">Backend - NestJS</p>
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-3">Bot de Automatización para Telegram (2024)</p>
-                    <ul class="list-disc pl-5 space-y-1 text-gray-400">
-                        <li>Sistema en Flask + Telethon para envío masivo de mensajes a bots</li>
-                        <li>Control con 'threading.Event', carga de 'txt' y múltiples sesiones</li>
-                    </ul>
+                    <p class="text-gray-300 mb-4">
+                        Sistema backend para gestión de reservas de canchas sintéticas. Permite a dueños digitalizar sus sedes, canchas, horarios, reservas y pagos con autenticación por recursos.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Backend</span>
+                    </div>
                 </div>
                 
                 <!-- Proyecto 2 -->
-                <div class="bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
                     <div class="flex items-center mb-4">
                         <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
-                            <i class="fas fa-tooth text-primary text-xl"></i>
+                            <i class="fas fa-utensils text-primary"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white">OdontoWeb</h3>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">SyncOrder App</h3>
+                            <p class="text-sm text-gray-400">Flask + Tailwind</p>
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-3">Gestión de Citas Dentales (2025)</p>
-                    <ul class="list-disc pl-5 space-y-1 text-gray-400">
-                        <li>Backend en NestJS y base de datos en MySQL</li>
-                        <li>Autenticación con Google, notificaciones por WhatsApp</li>
-                        <li class="flex items-center">
-                            <i class="fab fa-github mr-2"></i>
-                            <a href="https://github.com/rogerinfas/ConsultorioDentalWeb" class="text-primary hover:underline">github.com/rogerinfas/ConsultorioDentalWeb</a>
-                        </li>
-                    </ul>
+                    <p class="text-gray-300 mb-4">
+                        Sistema para agilizar pedidos en restaurantes mediante tablets táctiles en cocina, eliminando comandas manuales y acelerando el proceso de producción.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <a href="https://github.com/rogerinfas/syncorder_app" target="_blank" class="text-primary hover:underline flex items-center">
+                            <i class="fab fa-github mr-2"></i> Código
+                        </a>
+                        <div>
+                            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded mr-1">Full Stack</span>
+                            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-file-invoice-dollar text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Consulta DNI/RUC</h3>
+                            <p class="text-sm text-gray-400">Flask + Bootstrap</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Aplicación web para búsqueda rápida de RUC/DNI y generación de facturas/boletas en restaurantes, integrado con APIs de SUNAT.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Web App</span>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4 -->
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-map-marked-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">ProvinciasAPI</h3>
+                            <p class="text-sm text-gray-400">.NET Core</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Microservicio para obtener provincias y distritos del Perú, diseñado para ser consumido por múltiples aplicaciones como servicio independiente.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <a href="https://github.com/rogerinfas/ProvinciasAPI" target="_blank" class="text-primary hover:underline flex items-center">
+                            <i class="fab fa-github mr-2"></i> Código
+                        </a>
+                        <div>
+                            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded mr-1">API</span>
+                            <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">.NET</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5 -->
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fas fa-tooth text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">OdontoWeb</h3>
+                            <p class="text-sm text-gray-400">NestJS + MySQL</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Sistema de gestión de citas dentales con autenticación por Google, notificaciones por WhatsApp y generación automática de correos.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Full Stack</span>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 6 -->
+                <div class="bg-dark p-6 rounded-xl shadow-lg hover:shadow-xl transition border border-gray-800 hover:border-primary/30">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                            <i class="fab fa-telegram text-primary"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">AutoMsgTG</h3>
+                            <p class="text-sm text-gray-400">Flask + Telethon</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Bot de automatización para Telegram que permite envío masivo de mensajes a múltiples bots con control de sesiones concurrentes.
+                    </p>
+                    <div class="flex items-center justify-between mt-4">
+                        <span class="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded">Automatización</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -584,7 +722,7 @@
                 </div>
                 
                 <div class="mt-8 text-center">
-                    <p class="text-gray-400">© 2024 Roger Infa Sánchez. Todos los derechos reservados.</p>
+                    <p class="text-gray-400">© 2025 Roger Infa Sánchez. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
